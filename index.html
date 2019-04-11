@@ -19,14 +19,46 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-dark">
+        <span class="navbar-text mr-auto"></span>
+        <span class="navbar-text">
+            <a role="button" class="btn btn-danger btn-sm btn-block" data-toggle="modal"
+                data-target="#loginmodal">Member Login</a>
+        </span>
+        <span class="navbar-text">
+            <a role="button" class="btn btn-danger btn-sm btn-block">Impact HUB Locations</a>
+        </span>
+    </nav>
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
-                <div class="col-12 col-sm-4">
+                <div class="col-12 col-sm-2">
                     <h1>Impact HUB Seattle</h1>
                 </div>
-                <div class="col-12 col-sm align-self-center">
-                    <p>logo img</p>
+                <div class="col-12 col-sm-10">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">MEMBERSHIP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">COMMUNITY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">PROGRAMS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">RENT SPACE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CALENDAR</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACT</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -35,19 +67,60 @@
     <div class="container">
         <div class="row row-content">
             <div class="col">
-                carousel
+                <div id="introcarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img class="d-block img-fluid" src="img/laptop.jpg" alt="laptop">
+                            <div class="carousel-caption col-12 col-sm-4">
+                                <h2>Take a Tour and Find Out What Coworking is All About</h2>
+                                <span role="button" class="btn btn-danger btn-sm">Take a Tour</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="img/skyline.jpg" alt="skyline">
+                            <div class="carousel-caption col-12 col-sm-4">
+                                <h2>Office Suites Available Now!</h2>
+                                <span role="button" class="btn btn-danger btn-sm">Inquire Today</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="img/office.jpg" alt="office">
+                            <div class="carousel-caption col-12 col-sm-4">
+                                <h2>Book Your Next Event at Impact HUB</h2>
+                                <span role="button" class="btn btn-danger btn-sm">Book Now</span>
+                            </div>
+                        </div>
+                    </div>
+                    <ol class="carousel-indicators">
+                        <li data-target="#introcarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#introcarousel" data-slide-to="1"></li>
+                        <li data-target="#introcarousel" data-slide-to="2"></li>
+                    </ol>
+                </div>
             </div>
         </div>
 
-        <div class="row row-content">
-            <div class="col-12 col-sm-6 offset-sm-3">
-                <p>inputgroup ask a question</p>
+        <div class="row">
+            <div class="col-12 col-sm-10 offset-sm-2">
+                <form>
+                    <div class="form-group row" id="faqForm">
+                        <label for="question" class="col-2 col-sm-2 col-form-label">I want to:</label>
+                        <select class="custom-select col-8 col-sm-6">
+                            <option selected value="1">Host an event at Impact HUB</option>
+                            <option value="2">Become a Coworking member</option>
+                            <option value="3">Inquire about private office space</option>
+                        </select>
+                        <button type="submit" class=" col-sm-2 btn btn-primary">submit</button>
+                    </div>
+                </form>
             </div>
         </div>
 
-        <div class="row row-content">
-            <div class="col-12">
-                <p>button span to a modal</p>
+        <div class="row">
+            <div class="col-6 col-sm-2 offset-sm-5">
+                <span role="button" class="btn btn-danger btn-sm btn-block" data-toggle="modal"
+                    data-target="#faqmodal">Ask
+                    a question</span>
             </div>
         </div>
 
@@ -62,35 +135,26 @@
 
                     Remind me to thank John for a lovely weekend. You're a very talented young man, with your own clever
                     thoughts and ideas. Do you need a manager? God help us, we're in the hands of engineers. Is this my
-                    espresso machine? Wh-what is-h-how did you get my espresso machine?
-
-                    This thing comes fully loaded. AM/FM radio, reclining bucket seats, and... power windows. Hey, take
-                    a look at the earthlings. Goodbye! Hey, you know how I'm, like, always trying to save the planet?
-                    Here's my chance. So you two dig up, dig up dinosaurs?
-
-                    Must go faster... go, go, go, go, go! We gotta burn the rain forest, dump toxic waste, pollute the
-                    air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, they won't want it
-                    anymore! I was part of something special. What do they got in there? King Kong?</p>
+                    espresso machine? Wh-what is-h-how did you get my espresso machine?</p>
             </div>
-            <div class="d-none d-sm-block">
-                <div class="row row-content">
+            <div class="col-12 col-sm-6">
+                <div class="row">
                     <div class="col-6">
                         <p>image</p>
                     </div>
                     <div class="col-6">
                         <p>image</p>
                     </div>
-                    <div class="row row-content">
-                        <div class="col-6">
-                            <p>image</p>
-                        </div>
-                        <div class="col-6">
-                            <p>image</p>
-                        </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <p>image</p>
+                    </div>
+                    <div class="col-6">
+                        <p>image</p>
                     </div>
                 </div>
             </div>
-
             <div class="row row-content">
                 <div class="col-12">
                     <h3>Whats going on</h3>
@@ -107,7 +171,7 @@
             </div>
         </div>
 
-        <footer>
+        <footer class="footer">
             <div class="container">
                 <div class="row">
                     <div class="col-8 col-sm-4">
