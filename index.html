@@ -55,12 +55,35 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">MEMBERSHIP</a>
+                    <div class="dropdown">
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Free Trial Day</a>
+                            <a class="dropdown-item" href="#">Individual Plans</a>
+                            <a class="dropdown-item" href="#">Office Suites</a>
+                        </div>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">COMMUNITY</a>
+                    <div class="dropdown">
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">About Us</a>
+                            <a class="dropdown-item" href="#">Our Team</a>
+                            <a class="dropdown-item" href="#">Companies</a>
+                            <a class="dropdown-item" href="#">Members</a>
+                            <a class="dropdown-item" href="#">Jobs</a>
+                        </div>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">PROGRAMS</a>
+                    <div class="dropdown">
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Host Programs</a>
+                            <a class="dropdown-item" href="#">Careers for Impact</a>
+                            <a class="dropdown-item" href="#">SOCAP365 PNW</a>
+                        </div>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">RENT SPACE</a>
@@ -112,22 +135,26 @@
         </div>
 
         <div class="row">
-            <div class="col-12 col-sm-10 offset-sm-2">
-                <form>
-                    <div class="form-group row" id="faqForm">
-                        <label for="question" class="col-2 col-sm-2 col-form-label">I want to:</label>
-                        <select class="custom-select col-8 col-sm-6">
-                            <option selected value="1">Host an event at Impact HUB</option>
-                            <option value="2">Become a Coworking member</option>
-                            <option value="3">Inquire about private office space</option>
-                        </select>
-                        <button type="submit" class=" col-sm-2 btn btn-primary">submit</button>
+            <div class="col-12 col-sm-8 offset-sm-2">
+                <div class="card">
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group row" id="faqForm">
+                                <label for="question" class="col-4 col-sm-2 col-form-label">I Want to:</label>
+                                <select class="custom-select col-12 col-sm-8">
+                                    <option selected value="1">Host an event at Impact HUB</option>
+                                    <option value="2">Become a Coworking member</option>
+                                    <option value="3">Inquire about private office space</option>
+                                </select>
+                                <button type="submit" class=" col-4 col-sm-2 btn btn-primary">submit</button>
+                            </div>
+                        </form>
                     </div>
-                </form>
+                </div>
             </div>
         </div>
 
-        <div class="row">
+        <div class="row-space">
             <div class="col-6 col-sm-2 offset-sm-5">
                 <span role="button" class="btn btn-danger btn-sm btn-block" data-toggle="modal"
                     data-target="#faqmodal">Ask
@@ -246,14 +273,37 @@
     <footer class="footer">
         <div class="container">
             <div class="row">
-
-                <div class="col-4 col-sm-4">
-                    <p>contact us</p>
+                <div class="col-4 offset-2 col-sm-2">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="#">Membership</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Rent Space</a></li>
+                        <li><a href="./contactus.html">Contact</a></li>
+                    </ul>
                 </div>
-                <div class="col-12 col-sm-4">
-                    <p>instagram stuff</p>
+                <div class="col-7 col-sm-5 align-self-center">
+                    <div class="text-center">
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="> <i
+                                class="fa fa-facebook"> </i> </a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"> <i
+                                class="fa fa-linkedin"> </i> </a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"> <i class="fa fa-twitter">
+                            </i> </a>
+                        <br>
+                        <h4>Contact Us</h4>
+                        <address>
+                            220, Second Ave S,<br>
+                            Seattle, WA 98104<br>
+                            <i class="fa fa-phone fa-lg"> </i>(206)430-6007<br>
+                            <i class="fa fa-envelope fa-lg"> </i>:
+                            <a href="mailto:info@impacthubseattle.com">info@impacthubseattle.com</a>
+                        </address>
+                    </div>
                 </div>
             </div>
+        </div>
     </footer>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->

@@ -9,6 +9,10 @@
     min-height: 400px;
 }
 
+.row-space {
+    margin: 0px auto;
+    padding: 25px 0px 25px 0px;
+}
 .footer {
     background-color: rgb(133, 74, 6);
     margin: 0px auto;
