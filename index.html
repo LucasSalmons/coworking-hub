@@ -19,50 +19,61 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-dark">
-        <span class="navbar-text mr-auto"></span>
-        <span class="navbar-text">
-            <a role="button" class="btn btn-danger btn-sm btn-block" data-toggle="modal"
-                data-target="#loginmodal">Member Login</a>
-        </span>
-        <span class="navbar-text">
-            <a role="button" class="btn btn-danger btn-sm btn-block">Impact HUB Locations</a>
-        </span>
-    </nav>
-    <header class="jumbotron">
-        <div class="container">
-            <div class="row row-header">
-                <div class="col-12 col-sm-2">
-                    <h1>Impact HUB Seattle</h1>
-                </div>
-                <div class="col-12 col-sm-10">
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">HOME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">MEMBERSHIP</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">COMMUNITY</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">PROGRAMS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">RENT SPACE</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">CALENDAR</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">CONTACT</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <nav class="navbar navbar-expand-sm navbar-dark">
+        <a class="navbar-brand" href="#">Impact Hub Seattle</a>
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#loginLocalNav">
+            <span class="fa fa-sign-in"></span>
+        </button>
+        <div class="collapse navbar-collapse ml-auto" id="loginLocalNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="modal" data-target="#loginmodal">Member Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarlocations" data-toggle="dropdown">Impact Hub
+                        Locations</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Impact Hub Global</a>
+                        <a class="dropdown-item" href="#">Africa & Middle East</a>
+                        <a class="dropdown-item" href="#">Asia Pacific</a>
+                        <a class="dropdown-item" href="#">Europe</a>
+                        <a class="dropdown-item" href="#">Latin America & Caribbean</a>
+                        <a class="dropdown-item" href="#">North America</a>
+                    </div>
+                </li>
+            </ul>
         </div>
-    </header>
+    </nav>
+    <nav class="navbar navbar-light navbar-expand-sm">
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#headernav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ml-auto" id="headerNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">MEMBERSHIP</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">COMMUNITY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">PROGRAMS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">RENT SPACE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CALENDAR</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
     <div class="container">
         <div class="row row-content">
@@ -71,23 +82,23 @@
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
                             <img class="d-block img-fluid" src="img/laptop.jpg" alt="laptop">
-                            <div class="carousel-caption col-12 col-sm-4">
+                            <div class="carousel-caption d-none d-md-block" id="carSlide0">
                                 <h2>Take a Tour and Find Out What Coworking is All About</h2>
-                                <span role="button" class="btn btn-danger btn-sm">Take a Tour</span>
+                                <span role="button" class="btn btn-danger btn-lg">Take a Tour</span>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img class="d-block img-fluid" src="img/skyline.jpg" alt="skyline">
-                            <div class="carousel-caption col-12 col-sm-4">
+                            <div class="carousel-caption d-none d-md-block" id="carSlide1">
                                 <h2>Office Suites Available Now!</h2>
-                                <span role="button" class="btn btn-danger btn-sm">Inquire Today</span>
+                                <span role="button" class="btn btn-danger btn-lg">Inquire Today</span>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img class="d-block img-fluid" src="img/office.jpg" alt="office">
-                            <div class="carousel-caption col-12 col-sm-4">
+                            <div class="carousel-caption d-none d-md-block" id="carSlide2">
                                 <h2>Book Your Next Event at Impact HUB</h2>
-                                <span role="button" class="btn btn-danger btn-sm">Book Now</span>
+                                <span role="button" class="btn btn-danger btn-lg">Book Now</span>
                             </div>
                         </div>
                     </div>
@@ -129,67 +140,126 @@
                 <h2>Catchy Title</h2>
                 <h4>sub-title</h4>
                 <p>Hey, take a look at the earthlings. Goodbye! You know what? It is beets. I've crashed into a beet
-                    truck. God help us, we're in the hands of engineers. Hey, take a look at the earthlings. Goodbye!
-                    Remind me to thank John for a lovely weekend. They're using our own satellites against us. And the
+                    truck. God help us, we're in the hands of engineers. Hey, take a look at the earthlings.
+                    Goodbye!
+                    Remind me to thank John for a lovely weekend. They're using our own satellites against us. And
+                    the
                     clock is ticking.
 
-                    Remind me to thank John for a lovely weekend. You're a very talented young man, with your own clever
-                    thoughts and ideas. Do you need a manager? God help us, we're in the hands of engineers. Is this my
+                    Remind me to thank John for a lovely weekend. You're a very talented young man, with your own
+                    clever
+                    thoughts and ideas. Do you need a manager? God help us, we're in the hands of engineers. Is this
+                    my
                     espresso machine? Wh-what is-h-how did you get my espresso machine?</p>
             </div>
-            <div class="col-12 col-sm-6">
+            <div class="col-12 col-sm-6 justify-content-center align-self-center">
                 <div class="row">
-                    <div class="col-6">
-                        <p>image</p>
+                    <div class="col-12 col-sm-6">
+                        <div class="container">
+                            <img img class="d-block img-fluid custTile" src="img/laptop.jpg" alt="laptop">
+                            <span class="tileContent" href="#">Curious about the Hub? Experience everything we have
+                                to
+                                offer
+                                with a free day pass
+                            </span>
+                        </div>
                     </div>
-                    <div class="col-6">
-                        <p>image</p>
+                    <div class="col-12 col-sm-6">
+                        <div class="container">
+                            <img img class="d-block img-fluid custTile" src="img/laptop.jpg" alt="laptop">
+                            <span class="tileContent" href="#">Curious about the Hub? Experience everything we have
+                                to
+                                offer
+                                with a free day pass
+                            </span>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-6">
-                        <p>image</p>
+                    <div class="col-12 col-sm-6">
+                        <div class="container">
+                            <img img class="d-block img-fluid custTile" src="img/laptop.jpg" alt="laptop">
+                            <span class="tileContent" href="#">Curious about the Hub? Experience everything we have
+                                to
+                                offer
+                                with a free day pass</span>
+                        </div>
                     </div>
-                    <div class="col-6">
-                        <p>image</p>
+                    <div class="col-12 col-sm-6">
+                        <div class="container">
+                            <img img class="d-block img-fluid custTile" src="img/laptop.jpg" alt="laptop">
+                            <span class="tileContent" href="#">Curious about the Hub? Experience everything we have
+                                to
+                                offer
+                                with a free day pass</span>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="row row-content">
                 <div class="col-12">
-                    <h3>Whats going on</h3>
+                    <h2>Whats going on</h2>
                 </div>
                 <div class="col-12 col-sm-4">
-                    <p>Event Media 1</p>
+                    <img img class="d-block img-fluid" src="img/skyline.jpg" alt="skyline">
+                    <h4 class="events">[Member Event] Community Meeting</h2>
+                        <hr>
+                        <p>God help us, we're in the hands of engineers. God creates dinosaurs. God destroys
+                            dinosaurs.
+                            God creates Man. Man destroys God. Man creates Dinosaurs. You're a very talented young
+                            man,
+                            with your own clever thoughts and ideas. Do you need a manager? Yes, Yes, without the
+                            oops!
+                        </p>
+                        <a class="readmore" href="#">READ MORE</a>
                 </div>
                 <div class="col-12 col-sm-4">
-                    <p>Event Media 1</p>
+                    <img img class="d-block img-fluid" src="img/skyline.jpg" alt="skyline">
+                    <h4 class="events">YES! Presents: Beautiful Dirt</h2>
+                        <hr>
+                        <p>Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? Must go
+                            faster... go, go, go, go, go! Hey, you know how I'm, like, always trying to save the
+                            planet?
+                            Here's my chance. God help us, we're in the hands of engineers. Is this my espresso
+                            machine?
+                            Wh-what is-h-how did you get my espresso machine?
+                        </p>
+                        <a class="readmore" href="#">READ MORE</a>
                 </div>
                 <div class="col-12 col-sm-4">
-                    <p>Event Media 1</p>
+                    <img img class="d-block img-fluid" src="img/skyline.jpg" alt="skyline">
+                    <h4 class="events">How To Market Like a Boss</h2>
+                        <hr>
+                        <p>Hey, take a look at the earthlings. Goodbye! Forget the fat lady! You're obsessed with
+                            the
+                            fat lady! Drive us out of here! Do you have any idea how long it takes those cups to
+                            decompose. Must go faster. God creates dinosaurs. God destroys dinosaurs. God creates
+                            Man.
+                            Man destroys God. Man creates Dinosaurs.
+                        </p>
+                        <a class="readmore" href="#">READ MORE</a>
                 </div>
             </div>
         </div>
+    </div>
 
-        <footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-8 col-sm-4">
-                        <p>logo and stuff</p>
-                    </div>
-                    <div class="col-4 col-sm-4">
-                        <p>contact us</p>
-                    </div>
-                    <div class="col-12 col-sm-4">
-                        <p>instagram stuff</p>
-                    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-4 col-sm-4">
+                    <p>contact us</p>
                 </div>
-        </footer>
+                <div class="col-12 col-sm-4">
+                    <p>instagram stuff</p>
+                </div>
+            </div>
+    </footer>
 
-        <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
-        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
 </body>
 

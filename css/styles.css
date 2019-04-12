@@ -16,7 +16,7 @@
 }
 
 .jumbotron {
-    padding: 70px 30px 70px 30px;
+    padding: 10px 0px 10px 0px;
     margin: 0px auto;
     background: tan;
     color: floralwhite;
@@ -34,7 +34,11 @@ body {
 }
 
 .navbar-dark {
-    background-color: rgb(39, 23, 2);
+    background-color:rgb(133, 74, 6);
+}
+
+.navbar-light {
+    background-color: #ddd;
 }
 
 .tab-content {
@@ -45,9 +49,7 @@ body {
 }
 
 .nav-link {
-    background-color: white;
-    border: 1px solid black;
-    font-size: 80%;
+    color: black;
 }
 
 
@@ -55,9 +57,39 @@ body {
     width: 100%;
     height: 300px;
     overflow: hidden;
+    opacity: .8;
 }
 
-  #carousel-button {
+#carousel-button {
     right: 0px;
     position: absolute;
     bottom: 0px; }
+
+.custTile {
+    top:0;
+    left: 0;
+    position: relative;
+    min-width: 172.5px;
+    opacity: .5;
+}
+
+.tileContent {
+    top: 0;
+    position: absolute;
+    text-align: center;
+    margin-right: 30px;
+}
+
+#carSlide0 {
+    top: 0;
+    position: absolute;
+    text-align: left;
+    margin-right: 450px;
+}
+
+#carSlide1 {
+    top: 0;
+    position: absolute;
+    text-align: left;
+    margin-left: 575px;
+}
