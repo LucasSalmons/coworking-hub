@@ -55,7 +55,10 @@ body {
 .nav-link {
     color: black;
 }
-
+.headimg {
+    width: 100%;
+    height: 300px;
+}
 
 .carousel .carousel-item img {
     width: 100%;
